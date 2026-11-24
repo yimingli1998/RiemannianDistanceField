@@ -5,6 +5,10 @@ A hands-on introduction to the method of the paper
 (see also the [project website](https://sites.google.com/view/geodf)).  Every notebook is executed,
 so you can read the results and figures directly on GitHub, or run it yourself on a laptop CPU.
 
+> The notebooks and the `geodf` library in this repository were rewritten by
+> [Claude](https://www.anthropic.com/claude) (Anthropic's AI assistant) from the authors' research
+> code, as a clean and self-contained tutorial of the method.
+
 ## The idea
 
 Describe what makes a motion expensive with a **Riemannian metric** $G(q)$ — a positive-definite
@@ -77,6 +81,13 @@ A small library (~1k lines of PyTorch / NumPy) used by the notebooks:
 `python -m pytest tests -q` runs a few sanity checks (dynamics, Christoffel symbols, the grid
 solver against an exact solution and against a reference field computed with
 [agd](https://github.com/Mirebeau/AdaptiveGridDiscretizations)).
+
+## About this code
+
+This repository is a rewrite, by Claude (Anthropic), of the authors' research code into a tutorial:
+the solvers, the neural eikonal solver, the robot models and the notebooks were re-implemented and
+re-trained from scratch.  Numbers in the notebooks can therefore differ slightly from those
+reported in the paper.
 
 ## License
 
